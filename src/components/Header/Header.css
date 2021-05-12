@@ -1,0 +1,43 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.nav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  max-width: 260px;
+  margin-right: auto;
+}
+.user-actions div {
+  margin-left: auto;
+}
+.user-actions svg {
+  margin: 0 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.header-menu ul {
+  display: flex;
+  list-style: none;
+}
+.header-menu ul li {
+  margin: 0px 10px;
+}
+.header-menu .el-button {
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+.header-menu .el-button:hover {
+  background-color: grey;
+  color: #fff;
+}
+.header-menu .el-button:focus {
+  background-color: transparent;
+  color: rgb(120, 120, 245);
+}
+

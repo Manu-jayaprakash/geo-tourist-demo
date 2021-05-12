@@ -1,0 +1,37 @@
+.check-list-wrapper {
+  min-width: 200px;
+  margin: 20px;
+}
+.check-list-wrapper h3 {
+  margin-top: 0px;
+}
+.check-list-container {
+  border: 1px solid #e9e5e5;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-top: 70px;
+}
+.check-green {
+  color: green;
+}
+.check-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+.check-list-item span {
+  flex: 1;
+}
+.check-list-item.checked {
+  color: grey;
+}
+.check-box-button {
+  width: 100%;
+  margin-top: 15px;
+}
+.el-button.el-button {
+  margin-left: 0px;
+}

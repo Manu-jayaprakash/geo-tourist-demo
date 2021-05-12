@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <div class="page-wrapper">
+      <Description />
+      <div>
+        <ContentTab />
+        <PlaceTags />
+        <Categories />
+      </div>
+      <CheckList />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from "./components/Header/Header.vue";
+import ContentTab from "./components/ContentTab/ContentTab.vue";
+import PlaceTags from "./components/PlaceTags/PlaceTags.vue";
+import Categories from "./components/Categories/Categories.vue";
+import Description from "./components/Description/Description.vue";
+import CheckList from "./components/CheckList/CheckList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    ContentTab,
+    PlaceTags,
+    Categories,
+    Description,
+    CheckList,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.page-wrapper {
+  display: flex;
 }
 </style>

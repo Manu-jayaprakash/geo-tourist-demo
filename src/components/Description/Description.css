@@ -1,0 +1,56 @@
+.description {
+  min-width: 300px;
+  margin-right: 60px;
+}
+.description-options {
+  background-color: #f7f8f9;
+  padding: 0px 0px 0px 30px;
+  border-top: 3px solid #93b9df;
+  height: 100%;
+}
+.description-heading {
+  padding-left: 30px;
+}
+.description-option {
+  padding: 10px 0px;
+}
+.option-items {
+  max-width: 350px;
+  counter-reset: counter;
+  list-style: none;
+  padding-left: 40px;
+}
+.option-items .option-item {
+  margin: 30px 0px;
+  counter-increment: counter;
+  position: relative;
+  font-size: 18px;
+  color: grey;
+  padding-left: 20px;
+}
+.option-items .option-item::before {
+  content: counter(counter);
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 30px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: -5px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid grey;
+}
+.option-items.points .option-item:last-child::before {
+  content: "+";
+}
+.option-items.points .option-item:last-child {
+  cursor: pointer;
+}
+.description-options h3 {
+  margin: 0px;
+}

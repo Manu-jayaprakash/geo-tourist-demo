@@ -1,0 +1,28 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  background-color: #fff;
+  margin: 0 20px 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.3s;
+}
+.category.selected {
+  background-color: #3db4e3;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.category p {
+  font-size: 12px;
+}

@@ -1,0 +1,68 @@
+.el-tabs__nav-wrap::after {
+  display: none;
+}
+.place-details {
+  background-image: linear-gradient(
+    to right,
+    rgb(90, 87, 87) 33%,
+    rgba(70, 67, 67, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  padding: 20px 0px;
+}
+.place-image {
+  border-radius: 10px;
+  width: 100%;
+}
+.place-details-heading {
+  background-image: linear-gradient(
+    to right,
+    rgb(90, 87, 87) 33%,
+    rgba(70, 67, 67, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  padding: 20px 0px;
+  font-weight: 900;
+}
+.content-tabs .el-tabs__item {
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+  height: unset;
+  padding: 10px 20px;
+}
+.place-details-description {
+  line-height: 2;
+  color: #4d4848;
+  font-size: 18px;
+}
+.content-tabs .el-tabs__content {
+  overflow: visible;
+}
+.add-btn {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  background-color: #f8fbfc;
+}
+.set-cover-btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+}
+.place-details-image {
+  position: relative;
+}
+.set-cover-btn svg {
+  margin-right: 10px;
+}
+.place-details-image img {
+  filter: brightness(70%) saturate(160%);
+}
