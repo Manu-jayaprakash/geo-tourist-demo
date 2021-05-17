@@ -15,6 +15,7 @@
 .place-image {
   border-radius: 10px;
   width: 100%;
+  min-height: 160px;
 }
 .place-details-heading {
   background-image: linear-gradient(
@@ -65,4 +66,30 @@
 }
 .place-details-image img {
   filter: brightness(70%) saturate(160%);
+}
+
+@media (max-width: 1170px) and (min-width: 767.98px) {
+  .add-btn.el-button.is-round {
+    right: -40%;
+  }
+}
+@media (max-width: 1225px) {
+  .categories .category {
+    width: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .content-tabs {
+    margin-top: 30px;
+  }
+  .add-btn.el-button.is-round {
+    top: -80px;
+    padding: 8px 16px;
+  }
+  .content-tabs .el-tabs__header {
+    margin-bottom: 0px;
+  }
+  .categories .category {
+    width: 80px;
+  }
 }

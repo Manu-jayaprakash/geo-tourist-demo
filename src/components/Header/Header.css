@@ -40,4 +40,31 @@
   background-color: transparent;
   color: rgb(120, 120, 245);
 }
-
+.header-menu .el-button a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-menu .el-button a:focus {
+  color: #40addd;
+}
+.hamburger-icon {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .logo img {
+    margin: 0 auto;
+  }
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    font-size: 22px;
+  }
+}
+@media (max-width: 996px) {
+  .user-actions div {
+    display: flex;
+  }
+  .user-actions svg {
+    margin: 0 10px;
+  }
+}

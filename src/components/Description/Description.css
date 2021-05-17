@@ -54,3 +54,9 @@
 .description-options h3 {
   margin: 0px;
 }
+@media (max-width: 767.98px) {
+  .description {
+    margin-right: 0px;
+    min-width: 100%;
+  }
+}

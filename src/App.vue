@@ -45,4 +45,15 @@ export default {
 .page-wrapper {
   display: flex;
 }
+@media (max-width: 767.98px) {
+  #app {
+    max-width: 100%;
+  }
+  .page-wrapper {
+    flex-direction: column;
+  }
+  .header-menu,.user-actions {
+    display: none;
+  }
+}
 </style>
